@@ -6,8 +6,12 @@ export const FoodList = () => {
     let HTMLString;
     MenuManger.getFoods()
     .then(foodArray => {
+        let sortedByPrice = foodArray.sort(function(a, b) {
+            return a.price - b.price;
+        });
+        
         HTMLString = `<div class="row">`
-        HTMLString += foodArray.map(food => FoodCard(food)).join('')
+        HTMLString += sortedByPrice.map(food => FoodCard(food)).join('')
         HTMLString += `</div>`
         contentTarget.innerHTML = HTMLString;
     })
