@@ -39,3 +39,15 @@ export const setLoggedInUserSessionStorage = (userObj) => {
 export const setLoggedInUserAppState = (userObj) => {
   loggedInUser = userObj;
 }
+
+export const registerNewUser = (userObj) => {
+  return fetch("http://localhost:8088/users", {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify(userObj)
+
+  })
+      .then(response => response.json())
+}

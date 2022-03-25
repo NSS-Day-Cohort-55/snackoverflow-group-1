@@ -1,6 +1,7 @@
-export const RegisterForm = () => {
+import { registerNewUser } from "./UserManager.js";
 
-	return `
+export const RegisterForm = () => {
+  return `
   <div>
     <h3>Register</h3>
     <div class="input-group input-group-sm mb-3">
@@ -28,8 +29,21 @@ export const RegisterForm = () => {
         placeholder="name@place.com" />
   </div>
   <div class="input-group input-group-sm mb-3">
-    <button type="button" class="btn btn-primary" id="register__submit" disabled>Register</button>
+    <button type="button" class="btn btn-primary" id="register__submit">Register</button>
   </div>
 </div>
-	`
-}
+	`;
+};
+
+document.addEventListener("click", (event) => {
+  if (event.target.id === "register__submit") {
+    const userName = document.querySelector("#register_name").value;
+    const userEmail = document.querySelector("#register_email").value;
+    const userObj = {
+      name: userName,
+      email: userEmail,
+      isAdmin: false,
+    };
+    registerNewUser(userObj);
+  }
+});

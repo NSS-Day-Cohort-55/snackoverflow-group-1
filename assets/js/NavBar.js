@@ -51,6 +51,10 @@ export const NavBar = () => {
                     <img id="logo-nav" src="../assets/images/snackoverflow.svg" alt="Snack Overflow">
                     <span class="navbar-text">
         Call us to order: <a href="tel:5558675309">555-867-5309</a>
+       
+      </span>
+      <span class="navbar-text" style="margin-left: 1em">
+         welcome, ${getLoggedInUser().name !=undefined ? getLoggedInUser().name : 'guest'}
       </span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
