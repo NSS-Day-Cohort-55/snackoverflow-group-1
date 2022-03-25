@@ -56,6 +56,7 @@ export const NavBar = () => {
       <span class="navbar-text" style="margin-left: 1em">
          welcome, ${getLoggedInUser().name !=undefined ? getLoggedInUser().name : 'guest'}
       </span>
+                <button type="button" class="btn btn-primary" id="place-order-button">Place Order</button>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

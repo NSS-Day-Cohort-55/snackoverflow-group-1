@@ -21,6 +21,8 @@ headerElement.addEventListener("click", (event) => {
     UserManager.logoutUser();
     NavBar();
     FoodList();
+  } else if (event.target.id === "place-order-button") {
+    placeOrder();
   }
 });
 
