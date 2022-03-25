@@ -155,5 +155,21 @@
       "isAdmin": false,
       "id": 3
     }
+  ],
+  "orders": [
+      {
+          "id": 1,
+          "userId": 1,
+          "notes": "special requests and such",
+          "timestamp": "js Date() object. time the order is placed",
+          "isPickedUp": false
+      }
+  ],
+  "orderFoods": [
+      {
+          "id": 1,
+          "orderId": 1,
+          "foodId": 1
+      }
   ]
 }
