@@ -1,3 +1,5 @@
+
+
 export const FoodCard = (foodObj) => {
 
     return `
@@ -11,8 +13,8 @@ export const FoodCard = (foodObj) => {
                 <h5 class="card-title">${foodObj.name}</h5>
                 <p class="card-text">${foodObj.description}</p>
                 <p>Price: $${foodObj.price}</p>
-                 <button type="button" class="btn btn-primary">Order</button>
-                 <select id="quantity">
+                 <button type="button" class="btn btn-primary" id="orderBtn-${foodObj.id}">Order</button>
+                 <select id="quantity-${foodObj.id}">
                  <option selected disabled hidden > Quantity
                  </option>
                  <option>0</option>
