@@ -7,6 +7,7 @@ export const FoodCard = (foodObj) => {
         <img src="./assets/images/${foodObj.imageURL}" class="card-img-top" alt="${foodObj.imageURL}">
         </div>
             <div class="card-body">
+                ${foodObj.isVegetarian ? `<img src="./assets/images/icon-veg.png">`: ''}
                 <h5 class="card-title">${foodObj.name}</h5>
                 <p class="card-text">${foodObj.description}</p>
                 <p>Price: $${foodObj.price}</p>
@@ -16,4 +17,6 @@ export const FoodCard = (foodObj) => {
     </div>
     `
 }
+
+//used a ternary operator to check if the foodobj isVegetarian === true and added the veg icon if it is
 
