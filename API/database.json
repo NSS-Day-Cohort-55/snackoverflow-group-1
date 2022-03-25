@@ -148,6 +148,12 @@
       "email": "Alex@me.com",
       "isAdmin": false,
       "id": 2
+    },
+    {
+      "name": "Luke Slater",
+      "email": "lukeslater101@gmail.com",
+      "isAdmin": false,
+      "id": 3
     }
   ]
 }
