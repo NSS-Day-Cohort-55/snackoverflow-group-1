@@ -22,6 +22,8 @@ const headerElement = document.querySelector("header");
           UserManager.logoutUser();
           NavBar();
           FoodList();
+        } else if (event.target.id === 'place-order-button') {
+            placeOrder();
         }
     })
 
