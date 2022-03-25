@@ -7,6 +7,7 @@ import { NavBar } from "./NavBar.js";
 import * as UserManager from './auth/UserManager.js'; 
 import { CheckForUser } from "./auth/CheckForUser.js";
 import { Footer } from "./Footer.js";
+import { placeOrder } from "./menu/orders.js";
 
 ////////////// app declarations ///////////////////////
 // const headerElement = document.querySelector("header");
@@ -64,4 +65,4 @@ const startSO = () => {
 
 // application checks for a user
 // checkForUser();
-startSO()
+startSO();
